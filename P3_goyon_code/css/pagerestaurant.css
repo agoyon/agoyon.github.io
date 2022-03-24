@@ -1,0 +1,360 @@
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("../polices/Roboto-Light.ttf");
+}
+@font-face {
+  font-family: "roboto-regular";
+  src: url("../polices/roboto-regular.ttf");
+}
+@font-face {
+  font-family: "roboto-bold";
+  src: url("../polices/Roboto-bold.ttf");
+}
+@font-face {
+  font-family: "Shrikhand";
+  src: url("../polices/Shrikhand-Regular.ttf");
+}
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("../polices/Roboto-Light.ttf");
+}
+@font-face {
+  font-family: "roboto-regular";
+  src: url("../polices/roboto-regular.ttf");
+}
+@font-face {
+  font-family: "roboto-bold";
+  src: url("../polices/Roboto-bold.ttf");
+}
+@font-face {
+  font-family: "Shrikhand";
+  src: url("../polices/Shrikhand-Regular.ttf");
+}
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("../polices/Roboto-Light.ttf");
+}
+@font-face {
+  font-family: "roboto-regular";
+  src: url("../polices/roboto-regular.ttf");
+}
+@font-face {
+  font-family: "roboto-bold";
+  src: url("../polices/Roboto-bold.ttf");
+}
+@font-face {
+  font-family: "Shrikhand";
+  src: url("../polices/Shrikhand-Regular.ttf");
+}
+@keyframes loader-rotation {
+  0% {
+    transform: translate(-50%, 50%) rotate(0deg);
+  }
+  50% {
+    transform: translate(-50%, 50%) rotate(360deg);
+  }
+  100% {
+    transform: translate(-50%, 50%) rotate(720deg);
+  }
+}
+@keyframes loader-affichage {
+  0% {
+    opacity: 0%;
+  }
+  70% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes apparition-fondu {
+  0% {
+    opacity: 0%;
+    transform: translate(0px, 20px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+html {
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 0px;
+  margin: 0px;
+}
+
+.header {
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.header .fa-logo {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  font-size: 20px;
+  font-weight: 1000;
+  color: #000000;
+}
+.header #logosite {
+  width: 200px;
+}
+
+.section1 {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+.section1 p {
+  margin: 0px;
+}
+.section1 .imagerestaurant {
+  width: 100%;
+  height: 260px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.section1 .imagerestaurant img {
+  width: 100%;
+}
+
+.section2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: #f6f6f6;
+  border-radius: 40px;
+  padding: 20px;
+  margin: -40px 0px 0px 0px;
+  position: relative;
+  z-index: 2;
+}
+.section2 .enteterestaurant {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.section2 .enteterestaurant__titrerestaurant {
+  font-family: "Shrikhand";
+  font-size: 28px;
+  font-color: #000000;
+  margin: 0px;
+  margin-right: 20px;
+}
+.section2 .enteterestaurant input {
+  appearance: none;
+}
+.section2 .enteterestaurant .fa-like {
+  font-weight: 0;
+  font-size: 25px;
+  cursor: pointer;
+}
+.section2 .enteterestaurant .fa-like:hover {
+  font-weight: 900;
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent !important;
+}
+.section2 .enteterestaurant input:checked + label .fa-like {
+  font-weight: 900;
+  font-size: 25px;
+  cursor: pointer;
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent !important;
+}
+
+.conteneurmenu {
+  width: 100%;
+}
+
+.menu {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.menu__titre {
+  font-family: "Roboto-Light";
+  font-size: 18px;
+  font-color: #000000;
+  margin: 10px 0px 0px 0px;
+}
+.menu__interligne {
+  width: 50px;
+  height: 5px;
+  background-color: #99E2D0;
+  margin: 10px 0px 20px 0px;
+}
+.menu .animationmenu1 {
+  animation: apparition-fondu 1s;
+}
+.menu .animationmenu2 {
+  animation: apparition-fondu 1.75s, 0.75s;
+}
+.menu .animationmenu3 {
+  animation: apparition-fondu 2s, 1.5s;
+}
+.menu .animationmenu4 {
+  animation: apparition-fondu 3s, 3s;
+}
+.menu .choixmenu {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 10px 0px 10px 0px;
+  margin: 0px 0px 25px 0px;
+  background-color: #f6f6f6;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px 3px #DDDDDD;
+  z-index: 0;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+}
+.menu .choixmenu .infosmenu {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.menu .choixmenu .infosmenu .detailsmenu {
+  width: 80%;
+  height: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  overflow: hidden;
+  transition: width 330ms;
+}
+.menu .choixmenu .infosmenu .detailsmenu .ligne1 {
+  font-family: "roboto-bold";
+  font-size: 16px;
+  line-height: 14px;
+  font-color: #000000;
+  margin: 0px 0px 0px 20px;
+}
+.menu .choixmenu .infosmenu .detailsmenu .ligne2 {
+  font-family: "Roboto-Light";
+  color: #000000;
+  margin: 0px 0px 0px 20px;
+  display: block;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.menu .choixmenu .prixmenu {
+  height: 48px;
+  display: flex;
+  align-items: flex-end;
+  font-family: "roboto-bold";
+  font-size: 20px;
+  font-color: #000000;
+  margin: 0px 20px -3px 0px;
+  transition: transform 330ms;
+}
+.menu .choixmenu .validationmenu {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #99E2D0;
+  border-radius: 0px 20px 20px 0px;
+  margin-right: -70px;
+  margin-bottom: -10px;
+  opacity: 100;
+  transition: transform 330ms;
+}
+.menu .choixmenu .validationmenu .fa-validation {
+  font-size: 35px;
+  color: white;
+}
+.menu .choixmenu:hover .validationmenu {
+  transform: translate(-70px);
+  transition: transform 330ms ease-in-out;
+}
+.menu .choixmenu:hover .fa-validation {
+  transform: rotate(1turn);
+  transition: transform 400ms ease-in-out;
+}
+.menu .choixmenu:hover .detailsmenu {
+  width: 60%;
+  transition: width 330ms ease-in-out;
+}
+.menu .choixmenu:hover .prixmenu {
+  transform: translate(-70px);
+  transition: transform 330ms ease-in-out;
+}
+
+.boutonvalidation {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.boutonvalidation .bouton {
+  width: 230px;
+  height: 60px;
+  background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
+  border-radius: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0px 40px 0px;
+}
+.boutonvalidation .bouton .lienbouton {
+  text-decoration: none;
+  font-family: "roboto-bold";
+  font-size: 16px;
+  color: #ffffff;
+}
+
+footer {
+  padding: 20px;
+  background-color: #353535;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+footer p.footer__titre {
+  font-family: "Shrikhand";
+  font-size: 25px;
+  color: #ffffff;
+  margin: 0px 0px 20px 0px;
+}
+footer p {
+  margin: 0px 0px 10px 0px;
+}
+footer p .fa-footer {
+  width: 16px;
+  color: #ffffff;
+  margin-right: 10px;
+}
+footer p a.footer__link {
+  text-decoration: none;
+  font-family: "roboto-regular";
+  font-size: 16px;
+  color: #ffffff;
+}
+footer p a.gras {
+  font-family: "roboto-bold";
+}

@@ -1,0 +1,80 @@
+@import "./variables/_variables.scss";
+@import "./utils/_mixins.scss";
+
+header {
+width: 992px;
+margin: auto;
+}
+
+.header {
+
+	.fa-logo {
+	position: relative;
+	left: -30px;
+	top: 0px;
+	}
+}
+
+.section1 {
+width: 992px;
+margin: auto;
+border-radius: 0px 0px 20px 20px;
+	
+	.localisation {
+	border-radius: 20px 20px 0px 0px;
+	}
+}
+
+.section2 {
+width: 992px;
+margin: auto;
+padding: 20px 0px 20px 0px;
+
+	.titresection {
+
+	}
+
+	nav {
+		
+		ul {
+		display: flex;
+		justify-content: space-between;
+
+			li {
+
+				.navbtn {
+				width: 300px;
+				}
+			}
+		}
+	}
+}
+
+.section3 {
+width: 952px;
+margin: 0px auto 30px auto;
+border-radius: 20px
+}
+	
+.conteneur {
+width: 100%;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-between;
+
+	.blocrestaurant {
+	width: 466px;
+	}
+}
+
+footer {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+align-items: center;
+	
+	.blocfooter {
+	width: 992px;
+	}
+}

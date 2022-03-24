@@ -1,0 +1,281 @@
+@import "./variables/_variables.scss";
+@import "./utils/_mixins.scss";
+
+html {
+display: flex;
+justify-content: center;
+}
+
+body {
+width: 100%;
+background-color: $background-colorprimary;
+padding: 0px;
+margin: 0px;
+}
+
+.header {
+height: 60px; 
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+
+	.fa-logo{
+	position: absolute ;
+	left: 20px;
+	top: 20px;
+	font-size: 20px;
+	font-weight: 1000;
+	color: $color-quinquenary;
+	}
+
+	#logosite{
+	width: 200px;
+	}
+}
+
+.section1 {
+width: 100%;
+position: relative;
+z-index: 1;
+
+	p{
+	margin: 0px;
+	}
+
+	.imagerestaurant {
+	width: 100%;
+	height: 260px;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+
+		img {
+		width: 100%;
+		}
+	}
+}
+
+.section2 {
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: flex-start;
+
+background-color: $background-colorsecondary;
+border-radius: 40px;
+
+padding: 20px;
+margin: -40px 0px 0px 0px;
+position: relative;
+z-index: 2;
+
+	.enteterestaurant {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+
+		&__titrerestaurant {
+		@include titrerestaurant;
+		margin-right: 20px;
+		}
+
+		input {
+		appearance: none;
+		}
+
+		.fa-like {
+		font-weight: 0;
+		font-size: 25px;
+		cursor: pointer;
+
+			&:hover {
+			font-weight: 900;
+			background: -webkit-linear-gradient($color-secondary, $color-tertiary);
+	  		-webkit-background-clip: text;
+	  		-webkit-text-fill-color: transparent !important;
+			}
+		}
+
+		input:checked + label {
+
+			.fa-like {
+			font-weight: 900;
+			font-size: 25px;
+			cursor: pointer;
+			background: -webkit-linear-gradient($color-secondary, $color-tertiary);
+	  		-webkit-background-clip: text;
+	  		-webkit-text-fill-color: transparent !important;
+			}
+		}
+	}
+}
+
+.conteneurmenu {
+width: 100%;
+}
+
+.menu {
+width: 100%;
+display: flex;
+flex-direction: column;
+
+	&__titre {
+	@include titremenu;
+	}
+
+	&__interligne {
+	@include interlignemenu;
+	}
+
+	.animationmenu1 {
+	animation: apparition-fondu 1s;
+	}
+	.animationmenu2 {
+	animation: apparition-fondu 1.75s, 0.75s;
+	}
+	.animationmenu3 {
+	animation: apparition-fondu 2s, 1.50s;
+	}
+	.animationmenu4{
+	animation: apparition-fondu 3s, 3.00s;
+	}
+
+	.choixmenu {
+	@include menubtn;
+
+		.infosmenu{
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-end;
+
+
+			.detailsmenu {
+			width: 80%;
+			height: 48px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: flex-start;
+			overflow: hidden;
+			transition: width 330ms;
+
+				.ligne1 {
+				@include premierelignemenu;
+				}
+
+				.ligne2 {
+				@include deuxiemelignemenu;
+				}
+			}
+
+		}
+
+		.prixmenu {
+		@include prixmenu;
+		}
+
+		.validationmenu {
+		width: 70px;
+		height: 70px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: $background-quaternary;
+		border-radius: 0px 20px 20px 0px;
+
+		margin-right: -70px;
+		margin-bottom: -10px;
+
+		opacity: 100;
+		transition: transform 330ms;
+
+			.fa-validation {
+			font-size: 35px;
+			color: white;
+			}
+		}
+
+		&:hover .validationmenu {
+		@include anim_apparition;
+		}
+
+		&:hover .fa-validation {
+		@include anim_rotation;
+		}
+
+		&:hover .detailsmenu {
+		@include anim_reduction;
+		}
+
+		&:hover .prixmenu {
+		@include anim_apparition;
+		}
+	}
+}
+
+
+.boutonvalidation { 
+width: 100%;
+display: flex;
+justify-content: center;
+
+	.bouton {
+	width: 230px;
+	height: 60px;
+	background: linear-gradient(0deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
+	border-radius: 35px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 30px 0px 40px 0px;
+		
+		.lienbouton {
+		text-decoration: none;
+		font-family: $police-primary-bold;
+		font-size: 16px;
+		color: $text-colorsecondary;
+		}
+	}
+}
+
+footer {
+	padding: 20px;
+	background-color: $background-colortertiary;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+
+	p.footer__titre {
+		font-family: $police-secondary;
+		font-size: 25px;
+		color: $text-colorsecondary;
+		margin: 0px 0px 20px 0px;
+	}
+
+	p {
+		margin: 0px 0px 10px 0px;
+
+		.fa-footer{
+			width: 16px;
+			color: $color-primary;
+			margin-right: 10px;
+		}
+
+		a.footer__link {
+			text-decoration: none;
+			font-family: $police-primary-regular;
+			font-size: 16px;
+			color: $text-colorsecondary;
+		}
+
+		a.gras {
+			font-family: $police-primary-bold;
+		}
+	}
+}

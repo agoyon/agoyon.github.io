@@ -1,0 +1,169 @@
+@import "../variables/_variables.scss";
+@import "./_keyframes.scss";
+
+// Liste des mixins
+
+@mixin titresection {
+    font-family: $police-primary-bold;
+    font-size: 26px;
+    font-color: $text-colorprimary;
+    margin: 0px;
+}
+
+@mixin titrerestaurant {
+    font-family: $police-secondary;
+    font-size: 28px;
+    font-color: $text-colorprimary;
+    margin: 0px;
+}
+
+// Mixins menu
+
+@mixin btnmenu {
+    width: 100%;
+    height: 70px;
+
+    margin-left: 15px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    background-color: #f6f6f6;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 3px #DDDDDD;
+
+    z-index: 0;
+}
+
+@mixin navnumber {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+
+    position : relative;
+    left: -15px;
+
+    font-family: $police-primary-regular;
+    font-size: 16px;
+    color: $text-colorsecondary;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #8a5cd5; 
+
+    z-index: 1;
+}
+
+@mixin lienmenu {
+    text-decoration: none;
+    font-family: $police-primary-bold;
+    font-size: 16px;
+    color: $text-colorprimary;
+}
+
+@mixin boximage {
+    width: 100%;
+    height: 180px;
+    border-radius: 10px 10px 0px 0px;
+    overflow: hidden;
+    margin: 0px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// Mixins choix des menus
+
+@mixin titremenu {
+    font-family: $police-primary-light;
+    font-size: 18px;
+    font-color: $text-colorprimary;
+    margin: 10px 0px 0px 0px;
+}
+
+@mixin interlignemenu {
+    width: 50px;
+    height : 5px;
+    background-color: $color-quaternary;
+    margin: 10px 0px 20px 0px;
+}
+
+@mixin menubtn {
+    width: 100%;
+    height: 50px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    padding: 10px 0px 10px 0px;
+    margin: 0px 0px 25px 0px;
+
+    background-color: #f6f6f6;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 3px #DDDDDD;
+
+    z-index: 0;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+}
+
+@mixin premierelignemenu {
+    font-family: $police-primary-bold;
+    font-size: 16px;
+    line-height: 14px;
+    font-color: $text-colorprimary;
+    margin: 0px 0px 0px 20px;
+}
+
+@mixin troispetitespoints($lines, $line-height) {
+    display: block;
+    display: -webkit-box;
+    -webkit-line-clamp: $lines;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+@mixin deuxiemelignemenu {
+    font-family: $police-primary-light;
+    color: $text-colorprimary;
+    margin: 0px 0px 0px 20px;
+    @include troispetitespoints (1, 15px);
+
+}
+
+@mixin prixmenu {
+    height: 48px;
+    display: flex;
+    align-items: flex-end;
+    font-family: $police-primary-bold;
+    font-size: 20px;
+    font-color: $text-colorprimary;
+    margin: 0px 20px -3px 0px;
+    transition: transform 330ms;
+}
+
+@mixin anim_apparition {
+    transform: translate(-70px);
+    transition: transform 330ms ease-in-out;
+}
+
+@mixin anim_reduction {
+    width: 60%;
+    transition: width 330ms ease-in-out;
+}
+
+@mixin anim_rotation {
+    transform: rotate(1turn);
+    transition: transform 400ms ease-in-out;
+}
+
+

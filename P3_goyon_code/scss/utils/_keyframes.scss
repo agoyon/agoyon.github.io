@@ -1,0 +1,39 @@
+@import "../variables/_variables.scss";
+
+// Liste des animations Keyframes
+
+@keyframes loader-rotation {
+    0% {
+    transform: translate(-50%, 50%) rotate(0deg);
+    }
+    50%{
+    transform : translate(-50%, 50%) rotate(360deg);
+    }
+    100%{
+    transform : translate(-50%, 50%) rotate(720deg);
+    }
+}
+
+@keyframes loader-affichage {
+    0% {
+    opacity: 0%;
+    }
+    70% {
+    opacity: 0%;
+    }
+    100% {
+    opacity: 100%;
+    }
+}
+
+@keyframes apparition-fondu {
+    0% {
+    opacity: 0%;
+    transform: translate(0px, 20px);
+    }
+    100% {
+    transform: translate(0px, 0px);
+    }
+}
+
+
