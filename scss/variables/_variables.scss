@@ -1,0 +1,44 @@
+// variables couleurs principales
+
+$color-primary: #ffffff;
+$color-secondary: #9356DC;
+$color-tertiary: #FF79DA;
+$color-quaternary: #99E2D0;
+$color-quinquenary: #000000;
+
+// variables couleurs de fond
+
+$background-colorprimary: #ffffff;
+$background-colorsecondary: #f6f6f6;
+$background-colortertiary: #353535;
+$background-quaternary: #99E2D0;
+
+// variables couleur police d'écriture
+
+$text-colorprimary: #000000;
+$text-colorsecondary:#ffffff;
+
+// variables couleur police d'écriture
+
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url('../polices/Roboto-Light.ttf');
+} 
+@font-face {
+    font-family: 'roboto-regular';
+    src: url('../polices/roboto-regular.ttf');
+} 
+@font-face {
+    font-family: 'roboto-bold';
+    src: url('../polices/Roboto-bold.ttf');
+}
+
+@font-face {
+    font-family: 'Shrikhand';
+    src: url('../polices/Shrikhand-Regular.ttf');
+}
+
+$police-primary-light: 'Roboto-Light';
+$police-primary-regular: 'roboto-regular';
+$police-primary-bold: 'roboto-bold';
+$police-secondary: 'Shrikhand';

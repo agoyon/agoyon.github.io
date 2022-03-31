@@ -1,0 +1,313 @@
+@import "./variables/_variables.scss";
+@import "./utils/_mixins.scss";
+@import "./utils/_keyframes.scss";
+
+html {
+display: flex;
+justify-content: center;
+position: relative;
+width: 100%;
+}
+
+body {
+width: 100%;
+background-color: $background-colorprimary;
+padding: 0px;
+margin: 0px;
+}
+
+.loader {
+width: 100px;
+height: 100px;
+border: 15px solid $color-primary;
+border-top-color: $color-quaternary;
+border-bottom-color: $color-quaternary;
+border-radius: 50%;
+position: absolute;
+top: 10%;
+left: 50%;
+transform: translate(-50%, -300%);
+animation: loader-rotation 3s;
+}
+
+.header {
+height: 60px; 
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+animation: loader-affichage 5s;
+
+	#logosite{
+	width: 200px;
+	}
+}
+
+.section1 {
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;
+background-color: $background-colorsecondary;
+animation: loader-affichage 5s;
+
+	.localisation {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	background-color: #eaeaea;
+	box-shadow: 0 5px 7px -5px #9f9f9f inset;
+
+		.fa-localisation {
+		margin-right: 10px;
+		}		
+	
+		&__textlocalisation {
+		font-family: $police-primary-regular;
+		font-size: 15px;
+		font-weight: normal;
+		color: $text-colorprimary;
+		}
+	}
+
+	.titresection {
+	@include titresection;
+
+		&--position {
+		text-align: center;
+		padding-left: 40px;
+		padding-right: 40px;
+		margin-top: 40px;
+		}
+	}
+
+	.textsection {
+	font-family: $police-primary-light;
+	font-size: 18px;
+	color: $text-colorprimary;
+	text-align: center;
+	padding-left: 40px;
+	padding-right: 40px;
+	margin-bottom: 40px;
+	}
+
+	.bouton {
+	width: 230px;
+	height: 60px;
+	background: linear-gradient(0deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
+	border-radius: 35px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 50px;
+	
+		.lienbouton {
+		text-decoration: none;
+		font-family: $police-primary-bold;
+		font-size: 16px;
+		color: $text-colorsecondary;
+		}
+	}
+}
+
+.section2 {
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: flex-start;
+background-color: $background-colorprimary;
+padding: 20px;
+margin: 0px;
+animation: loader-affichage 5s;
+
+	.titresection {
+	@include titresection;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	}
+
+	nav {
+	width: 100%;
+	margin-bottom: 20px;
+
+		ul {
+		padding-left: 0px;
+
+			li {
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-start;
+			margin-bottom: 20px;
+
+				.navbtn {
+				@include btnmenu;
+
+					&:hover {
+					background-color: #f3edfd;
+					}
+
+					&:hover .fa-nav {
+					background-color: #f3edfd;
+					color: #8a5cd5;
+					}
+				}
+
+				.navnumber {
+				@include navnumber;
+				}
+
+				.fa-nav {
+				width : 16px;
+				height: 16px;
+				color: grey;
+				margin-right: 10px;
+				}
+
+				a {
+				@include lienmenu;
+				}
+			}
+		}
+	}
+}
+
+.section3 {
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: flex-start;
+background-color: $background-colorsecondary;
+padding: 20px;
+margin: 0px;
+animation: loader-affichage 5s;
+
+	.titresection {
+	@include titresection;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	}
+
+	.blocrestaurant {
+	width: 100%;
+	padding: 0px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	border-radius: 10px;
+	background-color: $background-colorprimary;
+	box-shadow: 0px 6px 10px -3px #DDDDDD;
+	margin-bottom: 30px;
+
+		&__boximage {
+		@include boximage;
+
+			img {
+			width: 100%;
+			}
+		}
+
+		&__inforestaurant {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 10px;
+		padding-right: 30px;
+
+				&--details {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: flex-start;
+
+					.nomrestaurant {
+					font-family: $police-primary-bold;
+					font-size: 16px;
+					color: $text-colorprimary;
+					margin: 0px;
+					margin-bottom: 3px;
+					}
+
+					.villerestaurant {
+					font-family: $police-primary-light;
+					font-size: 16px;
+					color: $text-colorprimary;
+					margin: 0px;
+					}
+				}
+
+				input {
+				appearance: none;
+				}
+
+				.fa-like {
+				font-weight: 300;
+				font-size: 25px;
+				cursor: pointer;
+
+					&:hover {
+					font-weight: 900;
+					background: -webkit-linear-gradient($color-secondary, $color-tertiary);
+  					-webkit-background-clip: text;
+  					-webkit-text-fill-color: transparent !important;
+					}
+				}
+
+				input:checked + label {
+
+					.fa-like {
+					font-weight: 900;
+					font-size: 25px;
+					cursor: pointer;
+					background: -webkit-linear-gradient($color-secondary, $color-tertiary);
+  					-webkit-background-clip: text;
+  					-webkit-text-fill-color: transparent !important;
+					}
+
+				}
+		}
+	}
+}
+
+footer {
+animation: loader-affichage 5s;
+
+	padding: 20px;
+	background-color: $background-colortertiary;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+
+	p.footer__titre {
+		font-family: $police-secondary;
+		font-size: 25px;
+		color: $text-colorsecondary;
+		margin: 0px 0px 20px 0px;
+	}
+
+	p {
+		margin: 0px 0px 10px 0px;
+
+		.fa-footer{
+			width: 16px;
+			color: $color-primary;
+			margin-right: 10px;
+		}
+
+		a.footer__link {
+			text-decoration: none;
+			font-family: $police-primary-regular;
+			font-size: 16px;
+			color: $text-colorsecondary;
+		}
+
+		a.gras {
+			font-family: $police-primary-bold;
+		}
+	}
+}

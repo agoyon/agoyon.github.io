@@ -1,0 +1,438 @@
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("../polices/Roboto-Light.ttf");
+}
+@font-face {
+  font-family: "roboto-regular";
+  src: url("../polices/roboto-regular.ttf");
+}
+@font-face {
+  font-family: "roboto-bold";
+  src: url("../polices/Roboto-bold.ttf");
+}
+@font-face {
+  font-family: "Shrikhand";
+  src: url("../polices/Shrikhand-Regular.ttf");
+}
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("../polices/Roboto-Light.ttf");
+}
+@font-face {
+  font-family: "roboto-regular";
+  src: url("../polices/roboto-regular.ttf");
+}
+@font-face {
+  font-family: "roboto-bold";
+  src: url("../polices/Roboto-bold.ttf");
+}
+@font-face {
+  font-family: "Shrikhand";
+  src: url("../polices/Shrikhand-Regular.ttf");
+}
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("../polices/Roboto-Light.ttf");
+}
+@font-face {
+  font-family: "roboto-regular";
+  src: url("../polices/roboto-regular.ttf");
+}
+@font-face {
+  font-family: "roboto-bold";
+  src: url("../polices/Roboto-bold.ttf");
+}
+@font-face {
+  font-family: "Shrikhand";
+  src: url("../polices/Shrikhand-Regular.ttf");
+}
+@keyframes loader-rotation {
+  0% {
+    transform: translate(-50%, 50%) rotate(0deg);
+  }
+  50% {
+    transform: translate(-50%, 50%) rotate(360deg);
+  }
+  100% {
+    transform: translate(-50%, 50%) rotate(720deg);
+  }
+}
+@keyframes loader-affichage {
+  0% {
+    opacity: 0%;
+  }
+  70% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes apparition-fondu {
+  0% {
+    opacity: 0%;
+    transform: translate(0px, 20px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("../polices/Roboto-Light.ttf");
+}
+@font-face {
+  font-family: "roboto-regular";
+  src: url("../polices/roboto-regular.ttf");
+}
+@font-face {
+  font-family: "roboto-bold";
+  src: url("../polices/Roboto-bold.ttf");
+}
+@font-face {
+  font-family: "Shrikhand";
+  src: url("../polices/Shrikhand-Regular.ttf");
+}
+@keyframes loader-rotation {
+  0% {
+    transform: translate(-50%, 50%) rotate(0deg);
+  }
+  50% {
+    transform: translate(-50%, 50%) rotate(360deg);
+  }
+  100% {
+    transform: translate(-50%, 50%) rotate(720deg);
+  }
+}
+@keyframes loader-affichage {
+  0% {
+    opacity: 0%;
+  }
+  70% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes apparition-fondu {
+  0% {
+    opacity: 0%;
+    transform: translate(0px, 20px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+html {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+body {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 0px;
+  margin: 0px;
+}
+
+.loader {
+  width: 100px;
+  height: 100px;
+  border: 15px solid #ffffff;
+  border-top-color: #99E2D0;
+  border-bottom-color: #99E2D0;
+  border-radius: 50%;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -300%);
+  animation: loader-rotation 3s;
+}
+
+.header {
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  animation: loader-affichage 5s;
+}
+.header #logosite {
+  width: 200px;
+}
+
+.section1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #f6f6f6;
+  animation: loader-affichage 5s;
+}
+.section1 .localisation {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #eaeaea;
+  box-shadow: 0 5px 7px -5px #9f9f9f inset;
+}
+.section1 .localisation .fa-localisation {
+  margin-right: 10px;
+}
+.section1 .localisation__textlocalisation {
+  font-family: "roboto-regular";
+  font-size: 15px;
+  font-weight: normal;
+  color: #000000;
+}
+.section1 .titresection {
+  font-family: "roboto-bold";
+  font-size: 26px;
+  color: #000000;
+  margin: 0px;
+  font-weight: normal;
+}
+.section1 .titresection--position {
+  text-align: center;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-top: 40px;
+}
+.section1 .textsection {
+  font-family: "Roboto-Light";
+  font-size: 18px;
+  color: #000000;
+  text-align: center;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-bottom: 40px;
+}
+.section1 .bouton {
+  width: 230px;
+  height: 60px;
+  background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
+  border-radius: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.section1 .bouton .lienbouton {
+  text-decoration: none;
+  font-family: "roboto-bold";
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.section2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 0px;
+  animation: loader-affichage 5s;
+}
+.section2 .titresection {
+  font-family: "roboto-bold";
+  font-size: 26px;
+  color: #000000;
+  margin: 0px;
+  font-weight: normal;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.section2 nav {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.section2 nav ul {
+  padding-left: 0px;
+}
+.section2 nav ul li {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+.section2 nav ul li .navbtn {
+  width: 100%;
+  height: 70px;
+  margin-left: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #f6f6f6;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px 3px #DDDDDD;
+  z-index: 0;
+}
+.section2 nav ul li .navbtn:hover {
+  background-color: #f3edfd;
+}
+.section2 nav ul li .navbtn:hover .fa-nav {
+  background-color: #f3edfd;
+  color: #8a5cd5;
+}
+.section2 nav ul li .navnumber {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  position: relative;
+  left: -15px;
+  font-family: "roboto-regular";
+  font-size: 16px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #8a5cd5;
+  z-index: 1;
+}
+.section2 nav ul li .fa-nav {
+  width: 16px;
+  height: 16px;
+  color: grey;
+  margin-right: 10px;
+}
+.section2 nav ul li a {
+  text-decoration: none;
+  font-family: "roboto-bold";
+  font-size: 16px;
+  color: #000000;
+}
+
+.section3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: #f6f6f6;
+  padding: 20px;
+  margin: 0px;
+  animation: loader-affichage 5s;
+}
+.section3 .titresection {
+  font-family: "roboto-bold";
+  font-size: 26px;
+  color: #000000;
+  margin: 0px;
+  font-weight: normal;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.section3 .blocrestaurant {
+  width: 100%;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0px 6px 10px -3px #DDDDDD;
+  margin-bottom: 30px;
+}
+.section3 .blocrestaurant__boximage {
+  width: 100%;
+  height: 180px;
+  border-radius: 10px 10px 0px 0px;
+  overflow: hidden;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section3 .blocrestaurant__boximage img {
+  width: 100%;
+}
+.section3 .blocrestaurant__inforestaurant {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 30px;
+}
+.section3 .blocrestaurant__inforestaurant--details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.section3 .blocrestaurant__inforestaurant--details .nomrestaurant {
+  font-family: "roboto-bold";
+  font-size: 16px;
+  color: #000000;
+  margin: 0px;
+  margin-bottom: 3px;
+}
+.section3 .blocrestaurant__inforestaurant--details .villerestaurant {
+  font-family: "Roboto-Light";
+  font-size: 16px;
+  color: #000000;
+  margin: 0px;
+}
+.section3 .blocrestaurant__inforestaurant input {
+  appearance: none;
+}
+.section3 .blocrestaurant__inforestaurant .fa-like {
+  font-weight: 300;
+  font-size: 25px;
+  cursor: pointer;
+}
+.section3 .blocrestaurant__inforestaurant .fa-like:hover {
+  font-weight: 900;
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent !important;
+}
+.section3 .blocrestaurant__inforestaurant input:checked + label .fa-like {
+  font-weight: 900;
+  font-size: 25px;
+  cursor: pointer;
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent !important;
+}
+
+footer {
+  animation: loader-affichage 5s;
+  padding: 20px;
+  background-color: #353535;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+footer p.footer__titre {
+  font-family: "Shrikhand";
+  font-size: 25px;
+  color: #ffffff;
+  margin: 0px 0px 20px 0px;
+}
+footer p {
+  margin: 0px 0px 10px 0px;
+}
+footer p .fa-footer {
+  width: 16px;
+  color: #ffffff;
+  margin-right: 10px;
+}
+footer p a.footer__link {
+  text-decoration: none;
+  font-family: "roboto-regular";
+  font-size: 16px;
+  color: #ffffff;
+}
+footer p a.gras {
+  font-family: "roboto-bold";
+}

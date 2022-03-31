@@ -1,0 +1,131 @@
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("../polices/Roboto-Light.ttf");
+}
+@font-face {
+  font-family: "roboto-regular";
+  src: url("../polices/roboto-regular.ttf");
+}
+@font-face {
+  font-family: "roboto-bold";
+  src: url("../polices/Roboto-bold.ttf");
+}
+@font-face {
+  font-family: "Shrikhand";
+  src: url("../polices/Shrikhand-Regular.ttf");
+}
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("../polices/Roboto-Light.ttf");
+}
+@font-face {
+  font-family: "roboto-regular";
+  src: url("../polices/roboto-regular.ttf");
+}
+@font-face {
+  font-family: "roboto-bold";
+  src: url("../polices/Roboto-bold.ttf");
+}
+@font-face {
+  font-family: "Shrikhand";
+  src: url("../polices/Shrikhand-Regular.ttf");
+}
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("../polices/Roboto-Light.ttf");
+}
+@font-face {
+  font-family: "roboto-regular";
+  src: url("../polices/roboto-regular.ttf");
+}
+@font-face {
+  font-family: "roboto-bold";
+  src: url("../polices/Roboto-bold.ttf");
+}
+@font-face {
+  font-family: "Shrikhand";
+  src: url("../polices/Shrikhand-Regular.ttf");
+}
+@keyframes loader-rotation {
+  0% {
+    transform: translate(-50%, 50%) rotate(0deg);
+  }
+  50% {
+    transform: translate(-50%, 50%) rotate(360deg);
+  }
+  100% {
+    transform: translate(-50%, 50%) rotate(720deg);
+  }
+}
+@keyframes loader-affichage {
+  0% {
+    opacity: 0%;
+  }
+  70% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes apparition-fondu {
+  0% {
+    opacity: 0%;
+    transform: translate(0px, 20px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+header {
+  width: 992px;
+  margin: auto;
+}
+
+.header .fa-logo {
+  position: relative;
+  left: -30px;
+  top: 0px;
+}
+
+.section1 {
+  width: 992px;
+  margin: auto;
+}
+
+.imagerestaurant {
+  border-radius: 20px;
+}
+
+.section2 {
+  width: 952px;
+  margin: -60px auto 0px auto;
+}
+
+.conteneurmenu {
+  width: 952px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.menu {
+  width: 461px;
+}
+
+.boutonvalidation {
+  width: 100%;
+}
+.boutonvalidation .bouton {
+  width: 100%;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .blocfooter {
+  width: 992px;
+}
