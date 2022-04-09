@@ -320,6 +320,9 @@ body {
   align-items: center;
   margin: 30px 0px 40px 0px;
 }
+.boutonvalidation .bouton:hover {
+  filter: brightness(1.1);
+}
 .boutonvalidation .bouton .lienbouton {
   text-decoration: none;
   font-family: "roboto-bold";

@@ -233,6 +233,10 @@ justify-content: center;
 	justify-content: center;
 	align-items: center;
 	margin: 30px 0px 40px 0px;
+
+		&:hover {
+		filter: brightness(1.10);
+		}
 		
 		.lienbouton {
 		text-decoration: none;

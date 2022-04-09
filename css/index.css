@@ -222,6 +222,9 @@ body {
   align-items: center;
   margin-bottom: 50px;
 }
+.section1 .bouton:hover {
+  filter: brightness(1.1);
+}
 .section1 .bouton .lienbouton {
   text-decoration: none;
   font-family: "roboto-bold";
